@@ -1,0 +1,25 @@
+body {
+    background-color: olivedrab;
+    text-align: center;
+    color: black;
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+a:hover {
+    color: deepskyblue;
+    text-decoration: line;
+}
+
+main {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    text-align: center;
+}
