@@ -28,9 +28,12 @@ body {
 
 ul {
     text-align: center;
-    color: aliceblue;
+    color: wheat;
     text-decoration: underline;
-    background-color: gray;
+    border-top: 50px solid black;
+    border-right: 40px solid yellow;
+    border-left: 45px solid green;
+    border-bottom: 60px solid red;
 }
 
 p {
