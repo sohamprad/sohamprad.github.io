@@ -1,0 +1,43 @@
+h1 {
+    font-family: Papyrus; 
+    font-size: 15px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 16.5px; 
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Comic Sans MS';
+    text-decoration: underline;
+}
+
+figcaption {
+    font-family: 'Times New Roman', serif;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+body {
+    color: black;
+    background: white;
+    margin: 10%;
+}
+
+ul {
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+    background-color: gray;
+}
+
+p {
+    text-align: center;
+    font-size: 200px;
+    margin: 0 0 auto 5%;
+    color: bisque;
+    text-decoration: underline;
+    background-color: brown;
+}
