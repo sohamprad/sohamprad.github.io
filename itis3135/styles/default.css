@@ -16,8 +16,9 @@ a:hover {
 
 main {
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
 }
 
 h2 {
@@ -34,4 +35,31 @@ img {
 figcaption {
     font-style: italic;
     text-align: center;
+}
+
+/*Laptop and small screens*/
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color: lightseagreen;
+        font-size: medium;
+        color: coral;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    #colorbox {
+        background-color: cornflowerblue;
+        font-size: small;
+        color: darkolivegreen;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    #colorbox {
+        background-color: lightgray;
+        font-size: small;
+        color: darkseagreen;
+    }
 }
