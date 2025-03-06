@@ -39,7 +39,7 @@ figcaption {
 
 /*Laptop and small screens*/
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    #colorbox {
+    body {
         background-color: lightseagreen;
         font-size: medium;
         color: coral;
@@ -48,7 +48,7 @@ figcaption {
 
 /* Rule Overrides For Tablet Devices */
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    #colorbox {
+    body {
         background-color: cornflowerblue;
         font-size: small;
         color: darkolivegreen;
@@ -57,7 +57,7 @@ figcaption {
 
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    #colorbox {
+    body {
         background-color: lightgray;
         font-size: small;
         color: darkseagreen;
