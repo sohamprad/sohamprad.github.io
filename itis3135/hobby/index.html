@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soham Pradhan ~ Sneaky Panda ~ ITIS3135 Hobby</title>
     <style>
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2E5339;
+        }
         h1 {
             font-family:'Lucida Sans', 'Lucida Sans Regular';
             color: yellowgreen;
             text-align: center;
         }
         h2 {
-            color: seagreen;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #FCF7F8;
+        }
+        section p {
+            color: #CED3DC;
         }
         nav a{
             margin-right: 25px;
@@ -21,8 +27,16 @@
             cursor: pointer;
             display: inline-block;
         }
+        a {
+            font-size: 18px;
+            text-decoration: none;
+            color:darkseagreen;
+            cursor: pointer;
+        }
         nav {
             text-align: center;
+            border: 5px solid #5E503F;
+            padding: 5px;
         }
         footer {
             text-align: center;
@@ -34,9 +48,13 @@
         .active {
             display: block;
         }
-        figure img{
+        #tennis-pic{
             width: 35%;
             height: 35%;
+        }
+        #tennis-ball {
+            width: 15%;
+            height: 15%;
         }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -58,14 +76,27 @@
         <section id="about" class="section">
             <h2>About</h2> <!--Who page-->
             <figure>
-                <img src="images/tennis-image.webp" alt="An image">
+                <img id="tennis-pic" src="images/tennis-image.webp" alt="An image">
                 <figcaption><i>Generate Images related to pro tennis</i></figcaption>
             </figure>
-            <p></p>
+            <br>
+            <p>This page is all about my passion for tennis. It is going to demonstrate my understansing of HTML, CSS, and JavaScript 
+                to develop an interactive page. This page will be displaying the pro tennis tour and different aspects of it.
+            </p>
+            <br>
+            <p>I decided to pick tennis as my hobby page because I have been playing tennis my whole life. I started when I was 6 years
+                old and have been playing ever since. I have played many tournaments growing up and have hit millions of tennis balls in 
+                practice. I find the sport very entertaining and competitive at a high level. I hope to educate you on the sport of tennis
+                and explain how people play at the highest level. 
+            </p>
         </section>
         <section id="home" class="section active">
             <h2>Home Page</h2> <!--what page-->
-            <figure></figure>
+            <figure>
+                <img id="tennis-ball" src="images/tennis-ball.webp" alt="Image of a tennis ball">
+                <figcaption><i>Generate me an image of a wilson us open tennis ball</i></figcaption>
+            </figure>
+            <p></p>
         </section>
         <section id="schedule" class="section">
             <h2>Schedule</h2> <!--when page-->
