@@ -5,42 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soham Pradhan ~ Sneaky Panda ~ ITIS3135 Hobby</title>
     <style>
-
+        h1 {
+            font-family:'Lucida Sans', 'Lucida Sans Regular';
+            color: yellowgreen;
+            text-align: center;
+        }
+        h2 {
+            color: seagreen;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        nav a{
+            margin-right: 25px;
+            text-decoration: none;
+            color:darkseagreen;
+            cursor: pointer;
+            display: inline-block;
+        }
+        nav {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+        }
+        .section {
+            display: none;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
+        figure img{
+            width: 35%;
+            height: 35%;
+        }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Soham Pradhan ~ Sneaky Panda ~ ITIS3135 Tennis</h1>
+        <h1>Soham Pradhan ~ ITIS3135 Hobby Page</h1>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Home</a>
+            <a href="#">Schedule</a>
+            <a href="#">Locations</a>
+            <a href="#">How</a>
+            <a href="#">Why</a>
+            <a href="#">AI Prompt</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>About Me</h2> <!--Who page-->
-            <figure></figure>
+        <section id="about" class="section">
+            <h2>About</h2> <!--Who page-->
+            <figure>
+                <img src="images/tennis-image.webp" alt="An image">
+                <figcaption><i>Generate Images related to pro tennis</i></figcaption>
+            </figure>
+            <p></p>
         </section>
-        <section>
+        <section id="home" class="section active">
             <h2>Home Page</h2> <!--what page-->
             <figure></figure>
         </section>
-        <section>
-            <h2>Guide</h2> <!--when page-->
+        <section id="schedule" class="section">
+            <h2>Schedule</h2> <!--when page-->
             <figure></figure>
         </section>
-        <section>
+        <section id="locations" class="section">
             <h2>Locations Of Top Tournaments</h2> <!--Locations-->
             <figure></figure>
         </section>
-        <section>
-            <h2></h2> <!---->
+        <section id="how" class="section">
+            <h2>How</h2> <!--how page-->
             <figure></figure>
         </section>
-        <section>
-            <h2></h2>
+        <section id="why" class="section"> <!--why page-->
+            <h2>Why</h2>
+            <figure></figure>
+        </section>
+        <section id="ai-prompt" class="section"> <!--AI prompt page-->
+            <h2>AI Prompt</h2>
             <figure></figure>
         </section>
     </main>
     <footer>
-        <p>Page Designed by <a href="https://sleepypanda.com">Sleepy Panda Incorporated </a>&copy;2025 
+        <p>Page Designed by <a href="https://sleepypanda.com">Sleepy Panda Incorporated</a> &copy;2025 
     </footer>
+    <script>
+        document.querySelectorAll("nav a").forEach((link) => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent page reload
+                
+                let sectionId = this.textContent.toLowerCase().replace(" ", "-"); // Convert text to match section id
+                
+                // Hide all sections
+                document.querySelectorAll(".section").forEach((section) => {
+                    section.classList.remove("active");
+                });
+
+                // Show the matched section
+                let targetSection = document.getElementById(sectionId);
+                if (targetSection) {
+                    targetSection.classList.add("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
