@@ -21,7 +21,6 @@
             color: #CED3DC;
         }
         nav a{
-            margin-right: 25px;
             text-decoration: none;
             color:darkseagreen;
             cursor: pointer;
@@ -32,6 +31,9 @@
             text-decoration: none;
             color:darkseagreen;
             cursor: pointer;
+        }
+        a:hover {
+            color: #3C3C3C;
         }
         nav {
             text-align: center;
@@ -53,8 +55,31 @@
             height: 35%;
         }
         #tennis-ball {
-            width: 15%;
-            height: 15%;
+            width: 188px;
+            height: 188px;
+        }
+        #tennis-schedule {
+            width: 25%;
+            height: 25%;
+        }
+        .id-sep {
+            width: 10px;
+            height: 10px;;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th, td{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid white;
+        }
+        th {
+            color: #F5F5F5;
+        }
+        td {
+            color: #D0F4DE;
         }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -64,11 +89,17 @@
         <h1>Soham Pradhan ~ ITIS3135 Hobby Page</h1>
         <nav>
             <a href="#">About</a>
+            <img src="images/tennis.png" alt="tennis ball seperator" class="id-sep">
             <a href="#">Home</a>
+            <img src="images/tennis.png" alt="tennis ball seperator" class="id-sep">
             <a href="#">Schedule</a>
+            <img src="images/tennis.png" alt="tennis ball seperator" class="id-sep">
             <a href="#">Locations</a>
+            <img src="images/tennis.png" alt="tennis ball seperator" class="id-sep">
             <a href="#">How</a>
+            <img src="images/tennis.png" alt="tennis ball seperator" class="id-sep">
             <a href="#">Why</a>
+            <img src="images/tennis.png" alt="tennis ball seperator" class="id-sep">
             <a href="#">AI Prompt</a>
         </nav>
     </header>
@@ -92,18 +123,81 @@
         </section>
         <section id="home" class="section active">
             <h2>Home Page</h2> <!--what page-->
+            <p><strong>Welcome to the home page to my Hobby site!</strong> Here I will teach you all about professional tennis and the
+            different events that occur across the globe in all seven different continents. You will learn about the schedule that
+            players follow throughout the year and how someone can become a pro tennis player. I look forward to teaching you all
+            about tennis!</p>
+            <br>
             <figure>
                 <img id="tennis-ball" src="images/tennis-ball.webp" alt="Image of a tennis ball">
                 <figcaption><i>Generate me an image of a wilson us open tennis ball</i></figcaption>
             </figure>
-            <p></p>
+            <br>
+            <p>Here are some helpful links if you would like to explore tennis further:</p>
+            <ul>
+                <li><a href="https://www.atptour.com/en" target="_blank" rel="noopener">ATP Official Site</a></li>
+                <li><a href="https://www.atptour.com/tournaments" target="_blank" rel="noopener">ATP Tournament Schedule</a></li>
+                <li><a href="https://www.qctennisshop.com/" target="_blank" rel="noopener">Local Tennis Shop</a></li>
+                <li><a href="https://www.espn.com/tennis/" target="_blank" rel="noopener">ESPN Tennis News</a></li>
+            </ul>
         </section>
         <section id="schedule" class="section">
             <h2>Schedule</h2> <!--when page-->
-            <figure></figure>
+            <p>Here the schedule for the upcoming Men's Professional Tournaments will be listed. Take a look at the table below
+                for some of the upcoming tournaments: </p>
+            <figure>
+                <img id="tennis-schedule" src="images/tennis-schedule.jpg" alt="A cartoon image of the schedule of pro tennis tournaments">
+                <figcaption>This is a cartoon image of the different places that pro tennis players play during the year</figcaption>
+            </figure>
+            <br>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th>Surface Type</th>
+                    <th>Duration</th>
+                </tr>
+                <tr>
+                    <td>BNP Paribas Open</td>
+                    <td>ATP 1000</td>
+                    <td>Hard Court</td>
+                    <td>March 5 - 16</td>
+                </tr>
+                <tr>
+                    <td>Miami Open</td>
+                    <td>ATP 1000</td>
+                    <td>Hard Court</td>
+                    <td>March 19 - 30</td>
+                </tr>
+                <tr>
+                    <td>Grand Prix Hassan II</td>
+                    <td>ATP 250</td>
+                    <td>Clay Court</td>
+                    <td>March 31 - April 6</td>
+                </tr>
+                <tr>
+                    <td>Rolex Monte-Carlo Masters</td>
+                    <td>ATP 1000</td>
+                    <td>Clay Court</td>
+                    <td>April 6 - 13</td>
+                </tr>
+                <tr>
+                    <td>Internazionali BNL d'Italia</td>
+                    <td>ATP 1000</td>
+                    <td>Clay Court</td>
+                    <td>May 7 - 18</td>
+                </tr>
+                <tr>
+                    <td><b>Roland Garros</b></td>
+                    <td>Grand Slam</td>
+                    <td>Clay Court</td>
+                    <td>May 28 - June 8</td>
+                </tr>
+            </table>
         </section>
         <section id="locations" class="section">
             <h2>Locations Of Top Tournaments</h2> <!--Locations-->
+            <p>Tennis tournament are also held all across the world! </p>
             <figure></figure>
         </section>
         <section id="how" class="section">
