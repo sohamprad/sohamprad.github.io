@@ -96,6 +96,10 @@
         #center-image {
             text-align: center;
         }
+        ol li {
+            color: white;
+            margin-bottom: 10px;
+        }
     </style>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -259,7 +263,10 @@
         </section>
         <section id="how" class="section">
             <h2>How Can Someone Join the Pro Tour</h2> <!--how page-->
-            <p>Joining the professional tour starts at the lower levels known as <strong>ATP Challenger Tour</strong></p>
+            <p>Joining the professional tour starts at the lower levels known as <strong>ATP Challenger Tour.</strong> This is the 
+            starting point to become a pro tennis player. Many of the world's best players went through this circuit and worked
+            their way up to the top of the world ranking.
+            </p>
             <figure></figure>
             <p></p>
         </section>
@@ -269,7 +276,17 @@
         </section>
         <section id="ai-prompt" class="section"> <!--AI prompt page-->
             <h2>AI Prompt</h2>
-            <figure></figure>
+            <p>I used ChatGPT to generate some images and code for how to hide the pages that have no been clicked on. Below are
+                the prompts that I used to help me generate the code.
+            </p>
+            <ol>
+                <li>Research and find a solution using css and/or JS that hides all sections except the one you have clicked. The idea is to 
+                    mimic the nav bar in your main site, the user will click a "link" in your nav tag that will hide all the sections on the page 
+                    and ONLY display info of the section of choice. So if you click on the word "Best locations" in the nav bar, it will only 
+                    display the "best locations" section on the page and hide the rest so the user can't scroll to see it. 
+                </li>
+                <li>Do not use data-target in the nav, use something else</li>
+            </ol>
         </section>
     </main>
     <footer>
