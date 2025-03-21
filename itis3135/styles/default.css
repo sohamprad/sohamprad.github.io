@@ -40,9 +40,9 @@ figcaption {
 /*Laptop and small screens*/
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
     body {
-        background-color: lightseagreen;
+        background-color: #7DCD85;
         font-size: medium;
-        color: coral;
+        color:#1C3144;
     }
 }
 
