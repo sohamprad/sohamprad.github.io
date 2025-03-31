@@ -15,8 +15,48 @@
         <h2>BYO Intro Page</h2>
         <br>
         <h3>Time to BYO Intro Page, please fill out the form below so we can create your own page</h3>
+        <br>
+        <br>
         <form>
-            
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+            <br><br>
+            <label for="mascot">Mascot: </label>
+            <input id="mascot" type="text" placeholder="Enter you Mascot Name" required>
+            <br><br>
+            <label for="image">Image: </label>
+            <input id="image" type="file" required>
+            <br><br>
+            <label for="image-caption">Image Caption: </label>
+            <input id="image-caption" type="text" placeholder="Enter your Image Caption" required>
+            <br><br>
+            <label for="personal-background">Personal Background: </label>
+            <textarea id="personal-background" placeholder="Enter your Personal Background" required></textarea>
+            <br><br>
+            <label for="academic-background">Academic Background: </label>
+            <textarea id="academic-background" placeholder="Enter your Academic Background" required></textarea>
+            <br><br>
+            <label for="web-dev">Background in Web Development: </label>
+            <textarea id="web-dev" placeholder="Enter your Web Development Backgound" required></textarea>
+            <br><br>
+            <label for="computer-platform">Primary Computer Platform: </label>
+            <input id="computer-platform" type="text" placeholder="Enter your Computer Platform" required>
+            <br><br>
+            <label for="courses">Courses Currently Taking: </label>
+            <button id="courses" type="button">Add Course</button>
+            <br><br>
+            <label for="funny">Funny Thing: </label>
+            <textarea id="funny" placeholder="Enter anything funny"></textarea>
+            <br><br>
+            <label for="commnets">Additional Comments: </label>
+            <textarea id="comments" placeholder="Additional Coments"></textarea>
+            <br><br>
+            <input id="agree" type="checkbox" required>
+            <label for="agree">"I understand that what is on this page is not password protected and I will not 
+                put anything here that I don’t want publicly available."</label>
+            <br><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
     </main>
     <footer>
