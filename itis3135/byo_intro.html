@@ -17,7 +17,7 @@
         <h3>Time to BYO Intro Page, please fill out the form below so we can create your own page</h3>
         <br>
         <br>
-        <form>
+        <form id="intro-form">
             <label for="name">Name: </label>
             <input type="text" id="name" placeholder="Enter your Name" required>
             <br><br>
@@ -26,6 +26,8 @@
             <br><br>
             <label for="image">Image: </label>
             <input id="image" type="file" required>
+            <button type="button" onclick="loadImage()">Click here to load</button>
+            <div id="loadImage"></div>
             <br><br>
             <label for="image-caption">Image Caption: </label>
             <input id="image-caption" type="text" placeholder="Enter your Image Caption" required>
@@ -40,15 +42,16 @@
             <textarea id="web-dev" placeholder="Enter your Web Development Backgound" required></textarea>
             <br><br>
             <label for="computer-platform">Primary Computer Platform: </label>
-            <input id="computer-platform" type="text" placeholder="Enter your Computer Platform" required>
+            <input id="computer-platform" type="text" placeholder="Enter your Platform" required>
             <br><br>
-            <label for="courses">Courses Currently Taking: </label>
-            <button id="courses" type="button">Add Course</button>
+            <label>Courses Currently Taking: </label>
+            <button id="addCourse" type="button" onclick="addCourse()">Add Course</button>
+            <div id="classContainer"></div>
             <br><br>
             <label for="funny">Funny Thing: </label>
             <textarea id="funny" placeholder="Enter anything funny"></textarea>
             <br><br>
-            <label for="commnets">Additional Comments: </label>
+            <label for="comments">Additional Comments: </label>
             <textarea id="comments" placeholder="Additional Coments"></textarea>
             <br><br>
             <input id="agree" type="checkbox" required>
@@ -56,7 +59,7 @@
                 put anything here that I don’t want publicly available."</label>
             <br><br><br>
             <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <input type="reset" id="reset-form" value="Reset">
         </form>
     </main>
     <footer>
@@ -67,5 +70,6 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
 </body>
 </html>
