@@ -1,3 +1,24 @@
+form {
+    margin: auto;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div {
+    padding-left: 5%;
+    padding-bottom: 3.25%;
+}
+
+label {
+    font-weight: bold;
+}
+
 body {
     background-color: olivedrab;
     text-align: center;

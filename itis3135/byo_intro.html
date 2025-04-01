@@ -16,50 +16,65 @@
         <br>
         <h3>Time to BYO Intro Page, please fill out the form below so we can create your own page</h3>
         <br>
-        <br>
         <form id="intro-form">
-            <label for="name">Name: </label>
-            <input type="text" id="name" placeholder="Enter your Name" required>
-            <br><br>
-            <label for="mascot">Mascot: </label>
-            <input id="mascot" type="text" placeholder="Enter you Mascot Name" required>
-            <br><br>
-            <label for="image">Image: </label>
-            <input id="image" type="file" required>
-            <button type="button" onclick="loadImage()">Click here to load</button>
-            <div id="loadImage"></div>
-            <br><br>
-            <label for="image-caption">Image Caption: </label>
-            <input id="image-caption" type="text" placeholder="Enter your Image Caption" required>
-            <br><br>
-            <label for="personal-background">Personal Background: </label>
-            <textarea id="personal-background" placeholder="Enter your Personal Background" required></textarea>
-            <br><br>
-            <label for="academic-background">Academic Background: </label>
-            <textarea id="academic-background" placeholder="Enter your Academic Background" required></textarea>
-            <br><br>
-            <label for="web-dev">Background in Web Development: </label>
-            <textarea id="web-dev" placeholder="Enter your Web Development Backgound" required></textarea>
-            <br><br>
-            <label for="computer-platform">Primary Computer Platform: </label>
-            <input id="computer-platform" type="text" placeholder="Enter your Platform" required>
-            <br><br>
-            <label>Courses Currently Taking: </label>
-            <button id="addCourse" type="button" onclick="addCourse()">Add Course</button>
-            <div id="classContainer"></div>
-            <br><br>
-            <label for="funny">Funny Thing: </label>
-            <textarea id="funny" placeholder="Enter anything funny"></textarea>
-            <br><br>
-            <label for="comments">Additional Comments: </label>
-            <textarea id="comments" placeholder="Additional Coments"></textarea>
-            <br><br>
-            <input id="agree" type="checkbox" required>
-            <label for="agree">"I understand that what is on this page is not password protected and I will not 
-                put anything here that I don’t want publicly available."</label>
-            <br><br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" id="reset-form" value="Reset">
+            <div>
+                <label for="name">Name: </label><br>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+            </div>
+            <div>
+                <label for="mascot">Mascot: </label><br>
+                <input id="mascot" type="text" placeholder="Enter you Mascot Name" required>
+            </div>
+            <div>
+                <label for="image">Image (PNG or JPG): </label><br>
+                <input id="image" type="file" required accept="image/png, image/jpg">
+            </div>
+            <div>
+                <label for="image-caption">Image Caption: </label><br>
+                <input id="image-caption" type="text" placeholder="Enter your Image Caption" required>
+            </div>
+            <div>
+                <label for="personal-background">Personal Background: </label><br>
+                <textarea id="personal-background" placeholder="Enter your Personal Background" rows="4" cols="100" required></textarea>
+            </div>
+            <div>
+                <label for="professional-background">Professional Background: </label><br>
+                <textarea id="professional-background" placeholder="Enter your Professional Background" rows="4" cols="100" required></textarea>
+            </div>
+            <div>
+                <label for="academic-background">Academic Background: </label><br>
+                <textarea id="academic-background" placeholder="Enter your Academic Background" rows="4" cols="100" required></textarea>
+            </div>
+            <div>
+                <label for="web-dev">Background in Web Development: </label><br>
+                <textarea id="web-dev" placeholder="Enter your Web Development Backgound" rows="4" cols="100" required></textarea>
+            </div>
+            <div>
+                <label for="computer-platform">Primary Computer Platform: </label>
+                <input id="computer-platform" type="text" placeholder="Enter your Platform" required>
+            </div>
+            <div>
+                <label>Courses Currently Taking: </label>
+                <div id="class-container"></div>
+                <button id="add-class-button" type="button">Add Course</button>
+            </div>
+            <div>
+                <label for="funny">Funny Thing: </label><br>
+                <textarea id="funny" placeholder="Enter anything funny" rows="4" cols="100"></textarea>
+            </div>
+            <div>
+                <label for="comments">Additional Comments: </label><br>
+                <textarea id="comments" placeholder="Additional Coments" rows="4" cols="100"></textarea>
+            </div>
+            <div>
+                <input id="agree" type="checkbox" required>
+                <label for="agree">I understand that what is on this page is not password protected and I will not 
+                    put anything here that I don’t want publicly available
+                </label>
+            </div>
+
+            <input type="submit" class="btn" value="Submit">    
+            <input type="reset" class="btn" value="Reset">
         </form>
     </main>
     <footer>
