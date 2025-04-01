@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("intro-form");
+    const originalFormHTML = form.innerHTML; // Store original form for resetting
 
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
@@ -65,16 +66,15 @@ document.addEventListener("DOMContentLoaded", function () {
         // Convert uploaded image to a preview URL
         let imagePreview = "";
         if (image) {
-            imagePreview = `<img src="${URL.createObjectURL(image)}" alt="${imageCaption}" width="200">`;
+            imagePreview = `<img src="${URL.createObjectURL(image)}" alt="${imageCaption}" width="200"><br><strong>Image Caption:</strong> ${imageCaption}`;
         }
 
-        // Generate the new content
+        // Generate the new content with a Reset button
         const outputHTML = `
             <h2>Welcome, ${name}!</h2>
             <ul>
-                ${imagePreview}
-                <li><i>Image Caption:</i> ${imageCaption}</li>
                 <li><strong>Your Mascot:</strong> ${mascot}</li>
+                <li>${imagePreview}</li>
                 <li><strong>Personal Background:</strong> ${personalBackground}</li>
                 <li><strong>Professional Background:</strong> ${professionalBackground}</li>
                 <li><strong>Academic Background:</strong> ${academicBackground}</li>
@@ -88,9 +88,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li><strong>Funny Thing:</strong> ${funnyThing}</li>
                 <li><strong>Additional Comments:</strong> ${comments}</li>
             </ul>
+            <button id="resetForm" class="btn">Reset</button>
         `;
 
         // Replace form with output
         form.innerHTML = outputHTML;
+
+        // Add event listener to Reset button to restore the original form
+        document.getElementById("resetForm").addEventListener("click", function () {
+            form.innerHTML = originalFormHTML;
+            addFormFunctionality(); // Restore form functionality
+        });
     });
 });
