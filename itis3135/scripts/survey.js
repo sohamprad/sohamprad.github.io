@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("intro-form");
 
     form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevents form from submitting the traditional way
+        event.preventDefault(); // Prevent default form submission
 
         // Gather form data
         const name = document.getElementById("name").value;
@@ -57,7 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Handle courses
         let courses = [];
         document.querySelectorAll(".course-input").forEach((input) => {
-            courses.push(input.value);
+            if (input.value.trim() !== "") {
+                courses.push(input.value.trim());
+            }
         });
 
         // Convert uploaded image to a preview URL
@@ -69,17 +71,23 @@ document.addEventListener("DOMContentLoaded", function () {
         // Generate the new content
         const outputHTML = `
             <h2>Welcome, ${name}!</h2>
-            <h3>Your Mascot: ${mascot}</h3>
-            ${imagePreview}
-            <p><strong>Image Caption:</strong> ${imageCaption}</p>
-            <p><strong>Personal Background:</strong> ${personalBackground}</p>
-            <p><strong>Professional Background:</strong> ${professionalBackground}</p>
-            <p><strong>Academic Background:</strong> ${academicBackground}</p>
-            <p><strong>Web Development Background:</strong> ${webDevBackground}</p>
-            <p><strong>Primary Computer Platform:</strong> ${computerPlatform}</p>
-            <p><strong>Courses Currently Taking:</strong> ${courses.length > 0 ? courses.join(", ") : "None"}</p>
-            <p><strong>Funny Thing:</strong> ${funnyThing}</p>
-            <p><strong>Additional Comments:</strong> ${comments}</p>
+            <ul>
+                ${imagePreview}
+                <li><i>Image Caption:</i> ${imageCaption}</li>
+                <li><strong>Your Mascot:</strong> ${mascot}</li>
+                <li><strong>Personal Background:</strong> ${personalBackground}</li>
+                <li><strong>Professional Background:</strong> ${professionalBackground}</li>
+                <li><strong>Academic Background:</strong> ${academicBackground}</li>
+                <li><strong>Web Development Background:</strong> ${webDevBackground}</li>
+                <li><strong>Primary Computer Platform:</strong> ${computerPlatform}</li>
+                <li><strong>Courses Currently Taking:</strong>
+                    <ul>
+                        ${courses.length > 0 ? courses.map((course) => `<li>${course}</li>`).join("") : "<li>None</li>"}
+                    </ul>
+                </li>
+                <li><strong>Funny Thing:</strong> ${funnyThing}</li>
+                <li><strong>Additional Comments:</strong> ${comments}</li>
+            </ul>
         `;
 
         // Replace form with output
