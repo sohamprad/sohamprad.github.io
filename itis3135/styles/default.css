@@ -10,6 +10,16 @@ form {
     margin-right: auto;
 }
 
+.hidden {
+    display: none;
+}
+
+.class-entry { 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 5px; 
+}
+
 div {
     padding-left: 5%;
     padding-bottom: 3.25%;
