@@ -25,7 +25,7 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-showSlides(slideIndex);
+showSlides(slideIndex); 
 
 // Next/previous controls
 function plusSlides(n) {
