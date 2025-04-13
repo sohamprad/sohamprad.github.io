@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soham Pradhan ~ Sneaky Panda ~ ITIS3135 Contract</title>
+    <link rel="stylesheet" href="styles/slideshow.css">
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
@@ -13,6 +14,122 @@
     </header>
     <main>
         <h2>Slideshow Gallery</h2>
+
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+              <div class="numbertext">1 / 12</div>
+                <img src="images/snake_image.png" alt="snake in the wild">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 12</div>
+                <img src="images/octopus_image.png" alt="octopus in the wild">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 12</div>
+                <img src="images/hare_image.png" alt="hare in the wild">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">4 / 12</div>
+                <img src="images/alligator_image.png" alt="alligator in the wild">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">5 / 12</div>
+                <img src="images/macaw_image.png" alt="macaw in the wild">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">11 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">12 / 12</div>
+                  <img src="images/" alt="">
+            </div>
+
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Image text -->
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail images -->
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="images/snake_image.png" onclick="currentSlide(1)" alt="A snake">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/octopus_image.png" onclick="currentSlide(2)" alt="An Octopus">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/hare_image.png" onclick="currentSlide(3)" alt="A Hare">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/alligator_image.png" onclick="currentSlide(4)" alt="An Alligator">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/macaw_image.png" onclick="currentSlide(5)" alt="A Macaw">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(6)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(7)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(8)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(9)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(10)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(11)" alt="">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="images/" onclick="currentSlide(12)" alt="">
+              </div>
+            </div>
+        </div>
+        <br>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
@@ -22,5 +139,6 @@
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>
