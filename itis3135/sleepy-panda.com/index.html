@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sleepy Panda Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <!--https://coolors.co/12100e-3c6997-519872-eff8e2-bdd4e7-->
     <style>
         :root {
@@ -11,19 +12,76 @@
             --lapis: #3C6997;
             --sea-green: #519872;
             --honeydew: #EFF8E2;
-            --blue: #BDD4E7;
+            --purple: #6457A6;
+        }
+        body {
+            background-color: var(--honeydew);
+        }
+        h1 {
+            color: var(--sea-green);
+        }
+        h2 {
+            color: var(--lapis);
+        }
+        p {
+            color: var(--purple);
+        }
+        #footer {
+            color: #12100E;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 8%;
+        }
+        a, #validation-link-html, #validation-link-css {
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+        ul li::marker {
+            content: "-- ";
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sleepy Panda Incorporated</h1>
+        <h1>Soham Pradhan ~ ITIS 3135 ~ Sleepy Panda Incorporated <img src="sleep-panda.png" alt="sleeping panda icon"></h1>
     </header>
     <main>
-
+        <h2>Sleepy Panda Inc Services</h2>
+        <p>Here at Sleepy Panda we provide the best mattress to sleep on. Our scientist have developed a blend of materials such as 
+            cotton, foam, polyester, and many other materials that make your sleep the best every night. You can come and test out our
+            mattresses in one of our many stores across the country. We also provide customized mattress building for your personal
+            needs. You can go to out website or come into a store and pick out the materials, size, and all other components of the 
+            matress! We hope to see you in one of our stores! We hope to see you in one of our stores!
+        </p>
+        <ul>
+            <li>We use the best cotton in the country</li>
+            <li>Most popular brand voted by JD Power 3 years in a row</li>
+            <li>The best place for employees to work at voted by all our employees</li>
+            <li>Provide a FREE consultation for personalized mattress</li>
+            <li>First on the market layered structure promotes breathability and disperses air</li>
+            <li>Structured cooling and heating for both sides of the mattress allows for comfortability when sleeping</li>
+        </ul>
+        <p>We provide customized mattress building for your personal needs. You can go to out website or come into a 
+            store and pick out the materials, size, and all other components of the matress! This consultation will be for FREE, that
+            way you can take your time and judge if the blend our experts have provided for you are truly good for you or not. We also
+            offer free shipping on all purchases within a 25 mile radius and we have our experts come and put the mattress together
+            and help explain the components of it. As well as how to operate it.
+        </p>
+        <br>
+        <p>Email: sleepypandamatress@gmail.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: 704-123-6547&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Address: 1234 Sleepy Panda Lane, Charlotte NC, 28262
+        </p>
     </main>
     <footer>
-
+        <p id="footer">Page Designed By Sleepy Panda Incorporated &copy;2025</p>
+        <a href="https://validator.w3.org/check?ur=referer" id="validation-link-html">
+            <img style="border: 0; width: 88px;height: 31px;" src="https://sohamprad.github.io/itis3135/images/w3htmlvalidator.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation-link-css">
+            <img style="border: 0; width: 88px;height: 31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid HTML!">
+        </a>
     </footer>
 </body>
 </html>
