@@ -1,0 +1,25 @@
+/**/
+:root {
+    --peach: #FFC49B;
+    --oxford-blue: #001B2E;
+    --charcoal: #294C60;
+    --french-gray: #ADB6C4;
+    --whip: #FFEFD3
+}
+h1 {
+    color: var(--charcoal);
+}
+h2 {
+    color: var(--oxford-blue);
+}
+body {
+    background-color: var(--french-gray);
+}
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: var(--peach);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
