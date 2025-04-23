@@ -1,0 +1,123 @@
+form {
+    margin: auto;
+}
+
+.btn {
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.class-entry { 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 5px; 
+}
+
+div {
+    padding-left: 5%;
+    padding-bottom: 3.25%;
+}
+
+label {
+    font-weight: bold;
+}
+
+body {
+    background-color: olivedrab;
+    text-align: center;
+    color: black;
+}
+
+a {
+    color: cornsilk;
+    text-decoration: none;
+}
+
+a:hover {
+    color: deepskyblue;
+    text-decoration: line;
+}
+
+main {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+img {
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+/*Laptop and small screens*/
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    body {
+        background-color: #7DCD85;
+        font-size: medium;
+        color:#1C3144;
+    }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    body {
+        background-color: cornflowerblue;
+        font-size: small;
+        color: darkolivegreen;
+    }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    body {
+        background-color: lightgray;
+        font-size: small;
+        color: darkseagreen;
+    }
+}
+
+figure table, table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+th, td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th {
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #7DCDAA;
+}
+
+table tr:nth-child(odd) {
+    background-color: #7DCD70;
+}
+
+table tr:first-child {
+    background-color: darkgreen;
+}
