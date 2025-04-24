@@ -121,3 +121,22 @@ table tr:nth-child(odd) {
 table tr:first-child {
     background-color: darkgreen;
 }
+
+.client-overview-header {
+    text-align: left;
+}
+
+.client-overview-li {
+    margin-bottom: 10px;
+}
+
+.client-overview-section {
+    margin-bottom: 10px;
+}
+
+.client-overview-wireframe {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-align: left;
+}
