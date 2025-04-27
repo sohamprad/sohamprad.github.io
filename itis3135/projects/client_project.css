@@ -1,3 +1,21 @@
 h1 {
     text-align: center;
 }
+
+#footer {
+    text-decoration: none;
+}
+
+body {
+    background-color: #7B6D8D;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A5C4D4;
+}

@@ -9,15 +9,17 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Jamil Niner Student Pantry</h1>
+        <div data-include="header.html" id="header"></div>
     </header>
     <main>
     </main>
     <footer>
+        <div data-include="footer.html" id="footer"></div>
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator?uri=" + location.href);
     </script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
