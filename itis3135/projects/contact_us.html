@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact US</title>
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="client_project.css">
+    <!-- SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <div data-include="header.html" id="header"></div>
+    </header>
+    <main>
+        <h2>Want to Contact Us?</h2>
+        <p class="left">Here is our information: </p>
+        <ul>
+            <li><strong>Email: </strong>jamil.niner@charlotte.edu</li>
+            <li><strong>Phone Number: </strong>704-123-9876</li>
+            <li><strong>Hours of Operation: </strong>M-F 9am - 5pm, Sat 10am - 3pm, Sun CLOSED</li>
+        </ul>
+        <br>
+        <p>Or Fill out the form below and we will get back to you soon as we can!</p>
+
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+      
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+      
+            <button type="submit">Send Message</button>
+          </form>
+    </main>
+    <footer>
+        <div data-include="footer.html" id="footer"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator?uri=" + location.href);
+    </script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/contact_us.js"></script>
 </body>
 </html>
