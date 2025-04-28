@@ -20,11 +20,21 @@ h1 {
 }
 
 h2 {
-    color: var(--pink);
+  color: var(--pink);
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+  color: var(--blue);
 }
 
 p {
-    color: var(--yellow);
+  color: var(--yellow);
+}
+
+.about-us {
+  text-align: left;
 }
 
 #footer {
