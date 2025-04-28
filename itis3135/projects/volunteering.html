@@ -6,6 +6,10 @@
   <title>Volunteer Sign-Up Calendar</title>
   <link rel="icon" href="images/icon.png" type="image/x-icon">
   <link rel="stylesheet" href="client_project.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
   <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,11 +26,11 @@
         <button id="prev-month">Previous</button>
         <h2 id="month-year"></h2>
         <button id="next-month">Next</button>
-    </div>
-
-    <button id="today-button">Jump to Today</button>
-
-    <div id="day-labels">
+      </div>
+    
+      <button id="today-button">Jump to Today</button>
+    
+      <div id="day-labels">
         <div>Sun</div>
         <div>Mon</div>
         <div>Tue</div>
@@ -34,18 +38,18 @@
         <div>Thu</div>
         <div>Fri</div>
         <div>Sat</div>
-    </div>
-
-    <div id="calendar"></div>
-  
-    <div id="signup-form" class="hidden">
-      <h2>Sign Up for <span id="selected-date"></span></h2>
-      <form id="volunteer-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
+      </div>
+    
+      <div id="calendar"></div>
+    
+      <!-- Dialog signup form -->
+      <div id="signup-dialog" title="Sign Up" class="hidden">
+        <form id="volunteer-form">
+          <input type="text" id="name" placeholder="Your Name" required><br>
+          <input type="email" id="email" placeholder="Your Email" required><br><br>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
   </main>
 
   <footer>

@@ -185,7 +185,6 @@ button:hover {
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 5px;
-  color: white;
 }
 
 #day-labels div {
@@ -219,10 +218,6 @@ button:hover {
 
 .hidden {
   display: none;
-}
-
-#signup-form {
-  margin-top: 20px;
 }
 
 form input {
