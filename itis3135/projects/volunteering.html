@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Volunteer Sign-Up Calendar</title>
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="client_project.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+  <header>
+    <div data-include="header.html" id="header"></div>
+  </header>
+
+  <main>
+    <h2>Volunteering Form</h2>
+    <p>Select an available date to volunteer.</p>
     
+    <div class="calendar-controls">
+        <button id="prev-month">Previous</button>
+        <h2 id="month-year"></h2>
+        <button id="next-month">Next</button>
+    </div>
+
+    <button id="today-button">Jump to Today</button>
+
+    <div id="day-labels">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+    </div>
+
+    <div id="calendar"></div>
+  
+    <div id="signup-form" class="hidden">
+      <h2>Sign Up for <span id="selected-date"></span></h2>
+      <form id="volunteer-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div data-include="footer.html" id="footer"></div>
+  </footer>
+  <script src="../scripts/HTMLInclude.min.js"></script>
+  <script src="../scripts/calendar.js"></script>
 </body>
 </html>

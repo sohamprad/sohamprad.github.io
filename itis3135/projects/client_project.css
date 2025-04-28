@@ -6,6 +6,10 @@
   --black-olive: #37392E;
 }
 
+.center {
+  text-align: center;
+}
+
 ul li {
   color: var(--black-olive);
 }
@@ -23,12 +27,9 @@ p {
     color: var(--yellow);
 }
 
-footer div {
+#footer {
   text-decoration: none;
-  display: table;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 body {
@@ -53,10 +54,6 @@ nav {
 .logo {
     width: 8%;
     height: 8%
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -138,4 +135,110 @@ nav {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.calendar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#today-button {
+  margin-bottom: 15px;
+  background-color: #2196F3;
+}
+
+#today-button:hover {
+  background-color: #1e88e5;
+}
+
+#day-labels, #calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#day-labels {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+#day-labels div {
+  padding: 5px;
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.day.unavailable {
+  background-color: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.day.today {
+  background-color: #FFFF99;
+}
+
+.empty {
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#signup-form {
+  margin-top: 20px;
+}
+
+form input {
+  margin: 10px;
+  padding: 8px;
+  width: 200px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
 }
