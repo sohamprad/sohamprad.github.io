@@ -10,12 +10,12 @@
 </head>
 <body>
     <header>
-        <div data-include="header.html" id="header"></div>
+        <div data-include="header.html" id="header"></div> <!--dynamic loading of the header-->
     </header>
     <main>
         <section>
-            <h2>Home</h2>
-            <img src="images/home_page_image.jpg" alt="food pantry">
+            <h2>Home</h2> <!--page header-->
+            <img src="images/home_page_image.jpg" alt="food pantry"> <!--image of a food pantry-->
         </section>
         <section>
             <h2>Explore More</h2>
@@ -23,12 +23,12 @@
         </section>
     </main>
     <footer>
-        <div data-include="footer.html" id="footer"></div>
+        <div data-include="footer.html" id="footer"></div> <!--dynamic loading of the footer-->
     </footer>
     <script>
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator?uri=" + location.href);
     </script>
-    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="../scripts/HTMLInclude.min.js"></script> <!--script to load the header/footer dynamically-->
 </body>
 </html>
