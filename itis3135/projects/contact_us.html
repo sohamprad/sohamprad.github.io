@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact US</title>
-    <link rel="icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="client_project.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon"> <!--icon on the tab-->
+    <link rel="stylesheet" href="client_project.css"> <!--stylsheet-->
     <!-- SweetAlert2 CSS and JS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -26,20 +26,20 @@
         <br>
         <p>Or Fill out the form below and we will get back to you soon as we can!</p>
 
-        <form id="contact-form">
+        <form id="contact-form"> <!--form the user can fill out to contact us-->
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
       
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="janedoe@gmail.com" required>
       
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
       
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="write your message here" required></textarea>
       
-            <button type="submit">Send Message</button>
+            <button type="submit">Send Message</button> <!--submit button-->
           </form>
     </main>
     <footer>
@@ -49,6 +49,7 @@
         document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator?uri=" + location.href);
     </script>
+    <!--scipts needed for this page-->
     <script src="../scripts/HTMLInclude.min.js"></script>
     <script src="../scripts/contact_us.js"></script>
 </body>
